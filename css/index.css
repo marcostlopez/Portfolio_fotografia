@@ -213,7 +213,8 @@ video {
     height: 15em;
     width: auto; }
   video {
-    width: auto; } }
+    width: 500px;
+    margin: auto; } }
 
 @media screen and (max-width: 768px) {
   .muestras {
