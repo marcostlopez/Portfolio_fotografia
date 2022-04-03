@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    /* las medidas relativas igual a 10px=1em/1rem*/
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-color: $principal;
+    min-height: 100vh;
+    animation-name: aparecer_pagina;
+    animation-timing-function: ease-in;
+    animation-iteration-count: initial;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    transition: .2s;
+    /* Grid para la distribucion del body */
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 1fr, 80vh, 1fr;
+    grid-template-areas:
+        "pepe pepe pepe"
+        "juan juan juan"
+        "rosa rosa rosa";
+
+}
+
+h1 {
+    font-family: $font-secondary;
+    color: $secondary;
+    font-weight: 200;
+    font-size: 2em;
+    text-align: center;
+    margin: 2em auto auto auto;
+}
+
+main {
+    margin: auto;
+    max-width: 1300px;
+    grid-area: juan;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+@media screen and (max-width: 1190px) {
+
+    main {
+        max-width: 1000px;
+    }
+}
+@media screen and (max-width: 930px) {
+    main {
+        max-width: 850px;
+    }
+}
+@media screen and (max-width: 768px) {
+    main {
+        max-width: 700px;
+    }
+}
+@media screen and (max-width: 480px) {
+    main {
+        max-width: 450px;
+    }
+
+    h1 {
+        margin-top: 1em;
+    }
+}
+@media screen and (max-width: 320px) {
+    main {
+        max-width: 310px;
+    }
+}

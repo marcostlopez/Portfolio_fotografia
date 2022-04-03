@@ -1,0 +1,187 @@
+.muestras__trabajos{
+    margin: 0 0 4em 0;
+
+    article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    background-image: linear-gradient(#59443f, #d9d2d0);
+    /*GRADIENTES*/
+
+    &:hover {
+        background-image: linear-gradient(#d9d2d0, #012340, #d9d2d0);
+        /*GRADIENTES*/
+    }
+
+    }
+
+    .serieSuenos,
+    .serieEstructuras {
+    width: 40em;
+    height: 25em;
+    }
+
+    .seriePlantas {
+    width: 40em;
+    height: 60em;
+    }
+
+    &__imagenes {
+        overflow: hidden;
+        margin: 5px;
+
+        img{
+            width: 40em;
+            opacity: 80%;
+            filter: blur(1px);
+            transition: 2.8s;
+
+            &:hover {
+                opacity: 100%;
+                filter: blur(0);
+                transform: scale(1.5);
+            }
+        }
+    }
+
+    &__textos {
+        display: block;
+        margin: 0 auto 0 3em;
+        max-width: 100em;
+
+        h2 {
+            color: $thirdly;
+            font-family: $font-secondary;
+            font-weight: 200;
+            font-size: 1.8em;
+        }
+
+        p {
+            color: $secondary;
+            font-family: $font-primary;
+            font-size: 1.4em;
+        }
+
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .muestras__trabajos{
+        .serieSuenos,
+        .serieEstructuras {
+            width: 30em;
+            height: 20em;
+        }
+
+        .seriePlantas {
+            width: 30em;
+            height: 45em;
+        }
+
+        &__imagenes img{
+            width: 30em;
+        }
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .muestras__trabajos{
+        article{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+        }
+        &__imagenes{
+            overflow: hidden;
+            margin: 0 1em;
+        }
+
+        .serieSuenos,
+        .serieEstructuras{
+            width: 30em;
+            height: 20em;
+        }
+        
+        .seriePlantas{
+            width: 30em;
+            height: 50em;
+        }
+
+        &__imagenes>img{
+            width: 30em;
+        }
+
+        &__textos{
+            max-width: 80em;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .muestras__trabajos{
+        &__imagenes{
+            margin: 1em;
+        }
+        .serieSuenos,
+        .serieEstructuras{
+            width: 20em;
+            height: 13em;
+        }
+        .seriePlantas{
+            width: 20em;
+            height: 30em;
+        }
+        &__imagenes>img{
+            width: 20em;
+        }
+        &__textos{
+            max-width: 50em;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .muestras__trabajos {
+        margin: 0 0 4em 0;
+
+        article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+        }
+
+        &__imagenes {
+            margin: .1em 1em;
+            &>img{
+                width: 30em;
+            }
+        }
+
+        &__textos {
+            margin: auto;
+            max-width: 40em;
+        }
+
+        .serieSuenos,
+        .serieEstructuras {
+        width: 30em;
+        height: 15em;
+        }
+
+        .seriePlantas {
+            width: 30em;
+            height: 40em;
+        }
+
+    }
+}
+@media screen and (max-width: 320px) {
+    .muestras__trabajos__textos {
+        margin: auto;
+        max-width: 30em;
+    }
+}

@@ -1,0 +1,137 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+    grid-area: pepe;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+    #logo {
+        height: auto;
+        width: 40em;
+        display: block;
+        margin: 12em auto 0em auto;
+    }
+
+    #menu {
+        background-color: $thirdly;
+        padding: .3em;
+        width: 50vw;
+        margin: 2em auto 0em auto;
+
+        .bg-light {
+            --bs-bg-opacity: 0;
+            background-color: unset;
+        }
+
+        ul{
+            li{
+                a {
+                    margin: 0em .5em 0em .5em;
+                    color: #d9d2d08a;
+                    text-decoration: none;
+                    font-family: $font-primary;
+                    font-weight: 200;
+                    font-size: 1.8em;
+                    font-style: normal;
+                    opacity: 50%;
+                    transition: 1s;
+
+                    &:hover {
+                        text-decoration: underline;
+                        color: $principal;
+                        opacity: 100%;
+                    }
+                }
+
+                .activo {
+                    text-decoration: underline;
+                    opacity: 100%;
+                }
+
+            }
+
+        }
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: auto;
+            /*cambio de margin a bootstrap*/
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header{
+        .collapse:not(.show) {
+        display: block;
+        /* MENU HAMBURGUESA BOOTSTRAP */
+        /*correccion para que no desaparezca el navbar antes de 480px*/
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    header{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        padding: 0 1em;
+
+        /* Menu hamburguesa bootstrap*/
+        .collapse:not(.show) {
+            display: none;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: block;
+            margin-left: auto;
+        }
+
+        .conteiner-fluid {
+            width: auto;
+        }
+
+        #menu {
+            display: block;
+            background-color: unset;
+            width: auto;
+            margin-right: 1em;
+
+            ul{
+                li{
+                    a {
+                        color: $secondary;
+                        font-size: 2em;
+                        /* correccion sobre el tamaño de tipografia*/
+                    }
+                }
+            }
+
+        }
+
+        #logo {
+            height: auto;
+            width: 8em;
+            display: block;
+            margin: 1em;
+            transition: 1s;
+        }
+    
+    }
+
+}
