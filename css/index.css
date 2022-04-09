@@ -269,6 +269,7 @@ video {
       height: 100%;
       object-fit: cover;
       transition: 3s;
+      /*map get*/
       background-color: #012340;
       padding: 0.3em; }
       .galeria__contenedor__item--img:hover {

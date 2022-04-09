@@ -17,7 +17,7 @@
             height: 100%;
             object-fit: cover;
             transition: 3s;
-            //map get//
+            /*map get*/
             background-color: map-get($style, background);
             padding: map-get($style, padding);
             &:hover {
