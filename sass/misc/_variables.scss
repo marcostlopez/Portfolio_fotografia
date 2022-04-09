@@ -4,3 +4,19 @@ $thirdly: #59443f;
 
 $font-primary: 'Petrona', serif;
 $font-secondary: 'Poppins', sans-serif;
+
+// mixins //
+@mixin bloque_texto {
+    color: $secondary;
+    font-family: $font-primary;
+    font-weight: 300;
+    font-size: 1.4em;
+    font-style: italic;
+}
+// map //
+
+// map get//
+$style:(
+    padding: .3em,
+    background: $secondary
+);

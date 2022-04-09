@@ -11,7 +11,7 @@
         width: 25em;
         display: block;
         opacity: 70%;
-        background-color: $secondary;
+        background-color: map-get($style, background);
         padding: .2em;
     }
 
@@ -29,11 +29,7 @@
         }
     
         p {
-            color: $secondary;
-            font-family: $font-primary;
-            font-weight: 300;
-            font-size: 1.4em;
-            font-style: italic;
+            @include bloque_texto;
             margin: auto 3em 2em 3em;
         }
     

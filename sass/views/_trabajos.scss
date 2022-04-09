@@ -1,5 +1,5 @@
 .muestras__trabajos{
-    margin: 0 0 4em 0;
+    margin: 0 auto 4em auto;
 
     article{
     display: flex;
@@ -58,13 +58,31 @@
             font-size: 1.8em;
         }
 
-        p {
-            color: $secondary;
-            font-family: $font-primary;
-            font-size: 1.4em;
+        p { //mixin///
+            @include bloque_texto;
         }
 
     }
+}
+
+@media screen and (max-width: 1280px) {
+    .muestras__trabajos{
+        .serieSuenos,
+        .serieEstructuras{
+            width: 28em;
+            height: 19em;
+        }
+
+        .seriePlantas {
+            width: 28em;
+            height: 42em;
+        }
+
+        &__imagenes img{
+            width: 28em;
+        }
+    }
+    
 }
 
 @media screen and (max-width: 1190px) {
@@ -145,7 +163,7 @@
 
 @media screen and (max-width: 480px) {
     .muestras__trabajos {
-        margin: 0 0 4em 0;
+        margin: 0 1em 4em 1em;
 
         article{
             display: flex;

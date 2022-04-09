@@ -44,6 +44,8 @@
     .muestrario {
         width: 50em;
         margin: 1em 0em;
+        background-color: map-get($style, background);
+        padding: map-get($style, padding);
     }
 
 }

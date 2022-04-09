@@ -39,11 +39,7 @@
     }
 
     p {
-        color: $secondary;
-        font-family: $font-primary;
-        font-weight: 300;
-        font-size: 1.4em;
-        font-style: italic;
+        @include bloque_texto;
         margin: auto 3em 2em 3em;
     }
 
@@ -56,6 +52,16 @@ video {
     padding: .2em;
     background-color: $thirdly;
     box-shadow: .3em .3em 2em $thirdly;
+}
+@media screen and (max-width: 1280px) {
+
+    .muestras{
+        &__imagen{
+            height: 23em;
+            width: auto;
+        }
+    }
+    
 }
 
 @media screen and (max-width: 1190px) {
