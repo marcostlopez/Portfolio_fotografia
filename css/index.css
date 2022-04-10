@@ -1,4 +1,16 @@
 @charset "UTF-8";
+.border--borderOne, .muestras__trabajos {
+  background-color: #55443f7c;
+  padding: .2em; }
+
+.border--borderTwo {
+  background-color: #59443f;
+  padding: .2em; }
+
+.border--borderThree {
+  background-color: #012340;
+  padding: .2em; }
+
 * {
   margin: 0;
   padding: 0;
@@ -162,7 +174,8 @@ header {
   margin: auto;
   max-width: 100%; }
   .muestras article {
-    margin: 0 1em; }
+    margin: 0 .5em;
+    padding: .2em; }
   .muestras figcaption {
     color: #012340;
     font-family: "Petrona", serif;
@@ -184,6 +197,7 @@ header {
     text-align: left;
     margin: 1em auto 1em 2em; }
   .desarrollo p {
+    /*mixin*/
     color: #012340;
     font-family: "Petrona", serif;
     font-weight: 300;
@@ -355,6 +369,7 @@ video {
     width: 25em;
     display: block;
     opacity: 70%;
+    /*map get*/
     background-color: #012340;
     padding: .2em; }
   .contenedor_about .desarrollo {
@@ -368,6 +383,7 @@ video {
       text-align: left;
       margin: 1em auto 1em 2em; }
     .contenedor_about .desarrollo p {
+      /*mixin*/
       color: #012340;
       font-family: "Petrona", serif;
       font-weight: 300;
@@ -409,17 +425,18 @@ video {
       margin: auto 1em; } }
 
 .muestras__trabajos {
-  margin: 0 auto 4em auto; }
+  margin: 0 auto 4em auto;
+  /*extend*/ }
   .muestras__trabajos article {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto;
-    background-image: linear-gradient(#59443f, #d9d2d0);
+    background-image: linear-gradient(#59443f, #d9d2d000);
     /*GRADIENTES*/ }
     .muestras__trabajos article:hover {
-      background-image: linear-gradient(#d9d2d0, #012340, #d9d2d0);
+      background-image: linear-gradient(#d9d2d000, #012340, #d9d2d000);
       /*GRADIENTES*/ }
   .muestras__trabajos .serieSuenos,
   .muestras__trabajos .serieEstructuras {
@@ -450,6 +467,7 @@ video {
       font-weight: 200;
       font-size: 1.8em; }
     .muestras__trabajos__textos p {
+      /*mixin*/
       color: #012340;
       font-family: "Petrona", serif;
       font-weight: 300;
@@ -574,6 +592,7 @@ video {
   .main_contacto .muestrario {
     width: 50em;
     margin: 1em 0em;
+    /* map get */
     background-color: #012340;
     padding: 0.3em; }
 

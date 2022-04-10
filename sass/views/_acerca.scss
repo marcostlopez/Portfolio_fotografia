@@ -11,6 +11,7 @@
         width: 25em;
         display: block;
         opacity: 70%;
+        /*map get*/
         background-color: map-get($style, background);
         padding: .2em;
     }
@@ -29,6 +30,7 @@
         }
     
         p {
+            /*mixin*/
             @include bloque_texto;
             margin: auto 3em 2em 3em;
         }

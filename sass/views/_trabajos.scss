@@ -1,5 +1,7 @@
 .muestras__trabajos{
     margin: 0 auto 4em auto;
+    /*extend*/
+    @extend .border--borderOne;
 
     article{
     display: flex;
@@ -7,11 +9,11 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto;
-    background-image: linear-gradient(#59443f, #d9d2d0);
+    background-image: linear-gradient(#59443f, #d9d2d000);
     /*GRADIENTES*/
 
     &:hover {
-        background-image: linear-gradient(#d9d2d0, #012340, #d9d2d0);
+        background-image: linear-gradient(#d9d2d000, #012340, #d9d2d000);
         /*GRADIENTES*/
     }
 
@@ -58,7 +60,7 @@
             font-size: 1.8em;
         }
 
-        p { //mixin///
+        p { /*mixin*/
             @include bloque_texto;
         }
 

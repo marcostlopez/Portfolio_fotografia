@@ -7,7 +7,8 @@
     max-width: 100%;
 
     article{
-        margin: 0 1em;
+        margin: 0 .5em;
+        padding: .2em;
     }
 
     figcaption {
@@ -38,7 +39,7 @@
         margin: 1em auto 1em 2em;
     }
 
-    p {
+    p { /*mixin*/
         @include bloque_texto;
         margin: auto 3em 2em 3em;
     }
