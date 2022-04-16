@@ -42,9 +42,9 @@ h1 {
   font-family: "Poppins", sans-serif;
   color: #012340;
   font-weight: 200;
-  font-size: 2em;
+  font-size: 2.1em;
   text-align: center;
-  margin: 2em auto auto auto; }
+  margin: 2em auto; }
 
 main {
   margin: auto;
@@ -181,6 +181,7 @@ header {
     font-family: "Petrona", serif;
     font-weight: 200;
     font-size: 1.2em;
+    font-style: italic;
     margin: .4em 0em 0em 0em; }
   .muestras__imagen {
     height: 25em;
@@ -193,7 +194,7 @@ header {
     color: #59443f;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 1.8em;
+    font-size: 2.2em;
     text-align: left;
     margin: 1em auto 1em 2em; }
   .desarrollo p {
@@ -619,6 +620,12 @@ footer {
     align-items: center;
     max-width: 80em;
     padding: .5em; }
+  footer p {
+    text-align: center;
+    color: #012340;
+    font-family: "Petrona", serif;
+    margin-bottom: auto;
+    font-size: 1.2em; }
 
 @keyframes aparecer_pagina {
   0% {

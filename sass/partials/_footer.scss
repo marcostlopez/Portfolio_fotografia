@@ -16,4 +16,12 @@ footer {
         padding: .5em;
     }
 
+    p{
+        text-align: center;
+        color: $secondary;
+        font-family: $font-primary;
+        margin-bottom: auto;
+        font-size: 1.2em;
+    }
+
 }
