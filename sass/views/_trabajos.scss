@@ -1,7 +1,5 @@
 .muestras__trabajos{
     margin: 0 auto 4em auto;
-    /*extend*/
-    @extend .border--borderOne;
 
     article{
     display: flex;
@@ -9,14 +7,6 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto;
-    background-image: linear-gradient(#59443f, #d9d2d000);
-    /*GRADIENTES*/
-
-    &:hover {
-        background-image: linear-gradient(#d9d2d000, #012340, #d9d2d000);
-        /*GRADIENTES*/
-    }
-
     }
 
     .serieSuenos,
@@ -39,11 +29,13 @@
             opacity: 80%;
             filter: blur(1px);
             transition: 2.8s;
+            @extend .border--borderOne;
+            //extend//
 
             &:hover {
                 opacity: 100%;
                 filter: blur(0);
-                transform: scale(1.5);
+                transform: scale(1.5); 
             }
         }
     }
@@ -71,17 +63,17 @@
     .muestras__trabajos{
         .serieSuenos,
         .serieEstructuras{
-            width: 28em;
+            width: 30em;
             height: 19em;
         }
 
         .seriePlantas {
-            width: 28em;
+            width: 30em;
             height: 42em;
         }
 
         &__imagenes img{
-            width: 28em;
+            width: 30em;
         }
     }
     

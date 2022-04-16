@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.border--borderOne, .muestras__trabajos {
+.border--borderOne, .muestras__trabajos__imagenes img {
   background-color: #55443f7c;
   padding: .2em; }
 
@@ -270,7 +270,6 @@ video {
   min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  /* grid-template-rows: repeat(6, 1fr); */
   grid-auto-rows: 150px;
   gap: 1em;
   padding: 0 10em 3em 10em;
@@ -425,19 +424,13 @@ video {
       margin: auto 1em; } }
 
 .muestras__trabajos {
-  margin: 0 auto 4em auto;
-  /*extend*/ }
+  margin: 0 auto 4em auto; }
   .muestras__trabajos article {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: auto;
-    background-image: linear-gradient(#59443f, #d9d2d000);
-    /*GRADIENTES*/ }
-    .muestras__trabajos article:hover {
-      background-image: linear-gradient(#d9d2d000, #012340, #d9d2d000);
-      /*GRADIENTES*/ }
+    margin: auto; }
   .muestras__trabajos .serieSuenos,
   .muestras__trabajos .serieEstructuras {
     width: 40em;
@@ -477,13 +470,13 @@ video {
 @media screen and (max-width: 1280px) {
   .muestras__trabajos .serieSuenos,
   .muestras__trabajos .serieEstructuras {
-    width: 28em;
+    width: 30em;
     height: 19em; }
   .muestras__trabajos .seriePlantas {
-    width: 28em;
+    width: 30em;
     height: 42em; }
   .muestras__trabajos__imagenes img {
-    width: 28em; } }
+    width: 30em; } }
 
 @media screen and (max-width: 1190px) {
   .muestras__trabajos .serieSuenos,
