@@ -465,8 +465,9 @@ video {
     .muestras__trabajos__textos h2 {
       color: #59443f;
       font-family: "Poppins", sans-serif;
-      font-weight: 200;
-      font-size: 1.8em; }
+      font-weight: 400;
+      font-size: 1.8em;
+      margin-top: .5em; }
     .muestras__trabajos__textos p {
       /*mixin*/
       color: #012340;
