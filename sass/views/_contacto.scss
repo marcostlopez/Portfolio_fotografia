@@ -51,6 +51,27 @@
 
 }
 
+/* cambio de colores definidos por bootstrap*/
+.form-control:focus{
+    border-color: #012340;
+    box-shadow: 0 0 0 0.25rem #012340aa;
+}
+
+.form-select:focus{
+        border-color: #012340;
+        box-shadow: 0 0 0 0.25rem #012340aa;
+}
+
+.form-check-input:checked{
+    background-color: #012340;
+    border-color: #012340;
+}
+
+.opciones:hover{
+    background-color: #012340;
+    color: #ffffff;
+}
+
 @media screen and (max-width: 1190px) {
     .main_contacto {
         margin-bottom: 2em;

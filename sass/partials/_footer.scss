@@ -14,6 +14,11 @@ footer {
         align-items: center;
         max-width: 80em;
         padding: .5em;
+
+        & li a>img {
+            height: 2em;
+            width: auto;
+        }
     }
 
     p{

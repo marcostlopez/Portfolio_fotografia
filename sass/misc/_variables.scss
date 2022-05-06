@@ -9,7 +9,7 @@ $font-secondary: 'Poppins', sans-serif;
 @mixin bloque_texto {
     color: $secondary;
     font-family: $font-primary;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 1.4em;
     font-style: italic;
 }

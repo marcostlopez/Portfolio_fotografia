@@ -54,6 +54,12 @@
 
         p { /*mixin*/
             @include bloque_texto;
+
+            & em{
+                font-weight: 500;
+                font-family: $font-primary;
+                color: $thirdly;
+            }
         }
 
     }

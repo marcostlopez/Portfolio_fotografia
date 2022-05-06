@@ -171,7 +171,7 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: auto;
+  margin: auto auto 3em auto;
   max-width: 100%; }
   .muestras article {
     margin: 0 .5em;
@@ -201,7 +201,7 @@ header {
     /*mixin*/
     color: #012340;
     font-family: "Petrona", serif;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 1.4em;
     font-style: italic;
     margin: auto 3em 2em 3em; }
@@ -246,7 +246,7 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin: auto; }
+    margin: auto auto 2em auto; }
     .muestras__imagen {
       height: 30em;
       width: auto; }
@@ -386,10 +386,17 @@ video {
       /*mixin*/
       color: #012340;
       font-family: "Petrona", serif;
-      font-weight: 300;
+      font-weight: 200;
       font-size: 1.4em;
       font-style: italic;
       margin: auto 3em 2em 3em; }
+      .contenedor_about .desarrollo p em {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: italic;
+        font-size: 1.5em;
+        line-height: 1em;
+        color: #012340aa; }
 
 @media screen and (max-width: 1190px) {
   .contenedor_about {
@@ -464,9 +471,13 @@ video {
       /*mixin*/
       color: #012340;
       font-family: "Petrona", serif;
-      font-weight: 300;
+      font-weight: 200;
       font-size: 1.4em;
       font-style: italic; }
+      .muestras__trabajos__textos p em {
+        font-weight: 500;
+        font-family: "Petrona", serif;
+        color: #59443f; }
 
 @media screen and (max-width: 1280px) {
   .muestras__trabajos .serieSuenos,
@@ -590,6 +601,23 @@ video {
     background-color: #012340;
     padding: 0.3em; }
 
+/* cambio de colores definidos por bootstrap*/
+.form-control:focus {
+  border-color: #012340;
+  box-shadow: 0 0 0 0.25rem #012340aa; }
+
+.form-select:focus {
+  border-color: #012340;
+  box-shadow: 0 0 0 0.25rem #012340aa; }
+
+.form-check-input:checked {
+  background-color: #012340;
+  border-color: #012340; }
+
+.opciones:hover {
+  background-color: #012340;
+  color: #ffffff; }
+
 @media screen and (max-width: 1190px) {
   .main_contacto {
     margin-bottom: 2em; }
@@ -620,6 +648,9 @@ footer {
     align-items: center;
     max-width: 80em;
     padding: .5em; }
+    footer ul li a > img {
+      height: 2em;
+      width: auto; }
   footer p {
     text-align: center;
     color: #012340;
